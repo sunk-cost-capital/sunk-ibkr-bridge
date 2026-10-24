@@ -1,0 +1,46 @@
+[package]
+name = "sunk-ibkr-bridge"
+version = "0.6.0"
+description = "Loopback-only browser bridge for the Interactive Brokers TWS API"
+authors = ["Sunk Cost Capital"]
+edition = "2024"
+license = "MIT"
+repository = "https://github.com/sunk-cost-capital/sunk-ibkr-bridge"
+default-run = "sunk-ibkr-bridge"
+
+[dependencies]
+axum = { version = "0.8.6", features = ["ws"] }
+chrono = { version = "0.4.42", default-features = false, features = ["clock"] }
+futures = "0.3.31"
+hex = "0.4.3"
+hmac = "0.12.1"
+ibapi = "3.3.0"
+rand = "0.8.5"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+sha2 = "0.10.9"
+time = "0.3.44"
+time-tz = "2.0.0"
+tokio = { version = "1.49.0", features = ["macros", "net", "rt-multi-thread", "signal", "sync", "time"] }
+tower-http = { version = "0.6.6", features = ["limit", "timeout", "trace"] }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.20", features = ["env-filter", "fmt"] }
+url = "2.5.7"
+uuid = { version = "1.18.1", features = ["v4"] }
+
+[dev-dependencies]
+tower = { version = "0.5.2", features = ["util"] }
+
+[[bin]]
+name = "sunk-ibkr-bridge"
+path = "src/main.rs"
+
+# Standalone workspace; keep the binary release profile identical to the shared crate.
+[workspace]
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true

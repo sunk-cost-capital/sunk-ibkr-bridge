@@ -1,0 +1,613 @@
+{
+  "detectionRequest": {
+    "version": 3
+  },
+  "probeRequest": {
+    "version": 3,
+    "accountRef": "U1234567"
+  },
+  "candleRequest": {
+    "version": 3,
+    "symbol": "SPY",
+    "conid": 756733,
+    "timeframe": "5m",
+    "from": 1784912400000,
+    "to": 1784916000000,
+    "limit": 12
+  },
+  "optionChainRequest": {
+    "version": 3,
+    "symbol": "SPY",
+    "maxStrikesPerSide": 8
+  },
+  "optionQuoteRequest": {
+    "version": 3,
+    "conid": 900001
+  },
+  "orderRequest": {
+    "version": 3,
+    "connectionId": "connection-1",
+    "provider": "ibkr",
+    "instrument": "756733",
+    "instrumentKind": "stock",
+    "side": "buy",
+    "sizeUsd": 1000.0,
+    "quantity": null,
+    "orderType": "limit",
+    "limitPrice": 650.25,
+    "stopPrice": null,
+    "timeInForce": "ioc",
+    "marketSlippageBps": 25,
+    "reduceOnly": false,
+    "postOnly": false,
+    "accountRef": "U1234567",
+    "customerOrderId": "sunk-0f8b6f1e-4c1d-4a53-9a3e-2d7f5c9b8e21"
+  },
+  "bracketOrderRequest": {
+    "version": 3,
+    "connectionId": "connection-1",
+    "provider": "ibkr",
+    "instrument": "756733",
+    "instrumentKind": "stock",
+    "side": "buy",
+    "sizeUsd": 6502.5,
+    "quantity": 10.0,
+    "orderType": "limit",
+    "limitPrice": 650.25,
+    "stopPrice": null,
+    "timeInForce": "gtc",
+    "marketSlippageBps": 25,
+    "reduceOnly": false,
+    "postOnly": false,
+    "accountRef": "U1234567",
+    "customerOrderId": "sunk-0f8b6f1e-4c1d-4a53-9a3e-2d7f5c9b8e21",
+    "protection": {
+      "takeProfit": {
+        "price": 700.0,
+        "customerOrderId": "sunk-1b2c3d4e-5f60-4a71-8b92-a3b4c5d6e7f8"
+      },
+      "stopLoss": {
+        "price": 620.0,
+        "customerOrderId": "sunk-2c3d4e5f-6071-4b82-9ca3-b4c5d6e7f809"
+      }
+    }
+  },
+  "linkedExitOrderRequest": {
+    "version": 3,
+    "connectionId": "connection-1",
+    "provider": "ibkr",
+    "instrument": "756733",
+    "instrumentKind": "stock",
+    "side": "sell",
+    "sizeUsd": 6200.0,
+    "quantity": 10.0,
+    "orderType": "stop_market",
+    "limitPrice": null,
+    "stopPrice": 620.0,
+    "timeInForce": "gtc",
+    "marketSlippageBps": null,
+    "reduceOnly": true,
+    "postOnly": false,
+    "accountRef": "U1234567",
+    "customerOrderId": "sunk-3e4f5a6b-7c8d-4e9f-8a0b-1c2d3e4f5a6b"
+  },
+  "advancedOrderRequest": {
+    "version": 3,
+    "connectionId": "connection-1",
+    "provider": "ibkr",
+    "instrument": "756733",
+    "instrumentKind": "stock",
+    "side": "sell",
+    "sizeUsd": 6400.0,
+    "quantity": 10.0,
+    "orderType": "trailing_stop_limit",
+    "limitPrice": null,
+    "stopPrice": null,
+    "timeInForce": "gtc",
+    "marketSlippageBps": 25,
+    "reduceOnly": false,
+    "postOnly": false,
+    "accountRef": "U1234567",
+    "customerOrderId": "sunk-4a5b6c7d-8e9f-4a0b-9c1d-2e3f4a5b6c7d",
+    "trailingPercent": 2.5,
+    "limitOffset": 0.25,
+    "outsideRth": true
+  },
+  "protectedMarketOrderRequest": {
+    "version": 3,
+    "connectionId": "connection-1",
+    "provider": "ibkr",
+    "instrument": "756733",
+    "instrumentKind": "stock",
+    "side": "buy",
+    "sizeUsd": 6510.0,
+    "quantity": 10.0,
+    "orderType": "limit",
+    "limitPrice": 651.0,
+    "stopPrice": null,
+    "timeInForce": "day",
+    "marketSlippageBps": 10,
+    "reduceOnly": false,
+    "postOnly": false,
+    "accountRef": "U1234567",
+    "customerOrderId": "sunk-5b6c7d8e-9f0a-4b1c-8d2e-3f4a5b6c7d8e",
+    "outsideRth": true,
+    "algo": {
+      "strategy": "adaptive",
+      "priority": "normal"
+    }
+  },
+  "marketOnOpenOrderRequest": {
+    "version": 3,
+    "connectionId": "connection-1",
+    "provider": "ibkr",
+    "instrument": "756733",
+    "instrumentKind": "stock",
+    "side": "buy",
+    "sizeUsd": 6500.0,
+    "quantity": 10.0,
+    "orderType": "market_on_open",
+    "limitPrice": null,
+    "stopPrice": null,
+    "timeInForce": "day",
+    "marketSlippageBps": null,
+    "reduceOnly": false,
+    "postOnly": false,
+    "accountRef": "U1234567",
+    "customerOrderId": "sunk-6c7d8e9f-0a1b-4c2d-9e3f-4a5b6c7d8e9f"
+  },
+  "reconcileOrderRequest": {
+    "version": 3,
+    "connectionId": "connection-1",
+    "provider": "ibkr",
+    "accountRef": "U1234567",
+    "customerOrderId": "sunk-0f8b6f1e-4c1d-4a53-9a3e-2d7f5c9b8e21",
+    "release": false
+  },
+  "accountStateRequest": {
+    "version": 3,
+    "accountRef": "U1234567"
+  },
+  "cancelOrderRequest": {
+    "version": 3,
+    "connectionId": "connection-1",
+    "provider": "ibkr",
+    "orderId": 12345,
+    "accountRef": "U1234567"
+  },
+  "accountBalanceStreamRequest": {
+    "operation": "account_balance",
+    "version": 3,
+    "accountRef": "U1234567"
+  },
+  "candleStreamRequest": {
+    "operation": "candles",
+    "version": 3,
+    "symbol": "SPY",
+    "conid": 756733,
+    "timeframe": "5m"
+  },
+  "stockQuoteStreamRequest": {
+    "operation": "stock_quote",
+    "version": 3,
+    "symbol": "SPY",
+    "conid": 756733
+  },
+  "orderEventsStreamRequest": {
+    "operation": "order_events",
+    "version": 3,
+    "accountRef": "U1234567"
+  },
+  "readyEvent": {
+    "event": "ready",
+    "version": 3,
+    "operation": "account_balance"
+  },
+  "accountBalanceEvent": {
+    "event": "account_balance",
+    "version": 3,
+    "update": {
+      "provider": "ibkr",
+      "ok": true,
+      "status": "available",
+      "message": "IBKR account summary is available",
+      "accountRef": "U1234567",
+      "balanceUsd": 1250.5,
+      "unit": "USD",
+      "summary": {
+        "netLiquidationUsd": 1250.5,
+        "totalCashUsd": 400.25,
+        "availableFundsUsd": 380.0,
+        "grossPositionValueUsd": 850.25,
+        "nativeCurrency": "USD",
+        "nativeNetLiquidation": 1250.5,
+        "fxRateToUsd": 1.0
+      }
+    }
+  },
+  "candleEvent": {
+    "event": "candle",
+    "version": 3,
+    "candle": {
+      "timestamp": 1784912400000,
+      "open": 650.1,
+      "high": 651.5,
+      "low": 649.75,
+      "close": 651.25,
+      "volume": 125000.0,
+      "confirmed": false
+    }
+  },
+  "stockQuoteEvent": {
+    "event": "stock_quote",
+    "version": 3,
+    "quote": {
+      "symbol": "SPY",
+      "conid": 756733,
+      "currency": "USD",
+      "bid": 650.2,
+      "ask": 650.25,
+      "last": 650.22,
+      "previousClose": 648.9,
+      "dataType": "live",
+      "updatedAtMs": 1784912401250,
+      "lastTradeAtMs": 1784912401000,
+      "priceIncrementRules": [
+        {
+          "lowerEdge": 0.0,
+          "increment": 0.01
+        }
+      ]
+    }
+  },
+  "orderStatusEvent": {
+    "event": "order_event",
+    "version": 3,
+    "order": {
+      "kind": "status",
+      "accountRef": "U1234567",
+      "orderId": 101,
+      "permId": 1873421102,
+      "parentId": 100,
+      "ocaGroup": "oca-sunk-0a1b2c3d-4e5f-4a60-8b71-c2d3e4f5a6b7",
+      "clientId": 17654,
+      "orderRef": "sunk-1b2c3d4e-5f60-4a71-8b92-a3b4c5d6e7f8",
+      "conid": 756733,
+      "symbol": "SPY",
+      "localSymbol": "SPY",
+      "securityType": "STK",
+      "currency": "USD",
+      "side": "sell",
+      "orderType": "LMT",
+      "status": "Submitted",
+      "filled": 4.0,
+      "remaining": 6.0,
+      "avgFillPrice": 700.0,
+      "lastFillPrice": 700.0
+    }
+  },
+  "orderExecutionEvent": {
+    "event": "order_event",
+    "version": 3,
+    "order": {
+      "kind": "execution",
+      "accountRef": "U1234567",
+      "orderId": 101,
+      "permId": 1873421102,
+      "parentId": 100,
+      "ocaGroup": "oca-sunk-0a1b2c3d-4e5f-4a60-8b71-c2d3e4f5a6b7",
+      "clientId": 17654,
+      "orderRef": "sunk-1b2c3d4e-5f60-4a71-8b92-a3b4c5d6e7f8",
+      "orderType": "LMT",
+      "conid": 756733,
+      "symbol": "SPY",
+      "localSymbol": "SPY",
+      "securityType": "STK",
+      "currency": "USD",
+      "side": "sell",
+      "execId": "0000e0d5.6578a1b2.01.01",
+      "executedAtMs": 1790793001000,
+      "quantity": 4.0,
+      "price": 700.0,
+      "cumulativeQuantity": 4.0,
+      "avgPrice": 700.0,
+      "liquidation": false,
+      "commission": 1.0,
+      "commissionCurrency": "USD",
+      "realizedPnl": 198.0
+    }
+  },
+  "orderExecutionEventAtLimits": {
+    "event": "order_event",
+    "version": 3,
+    "order": {
+      "kind": "execution",
+      "accountRef": "DU1234567",
+      "orderId": 101,
+      "permId": 9007199254740991,
+      "parentId": null,
+      "ocaGroup": null,
+      "clientId": 17654,
+      "orderRef": "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr",
+      "orderType": null,
+      "conid": 756733,
+      "symbol": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+      "localSymbol": "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL",
+      "securityType": "STK",
+      "currency": "USD",
+      "side": "sell",
+      "execId": "e-limits",
+      "executedAtMs": 1790793001000,
+      "quantity": 1000000000.0,
+      "price": 1000000000.0,
+      "cumulativeQuantity": 1000000000.0,
+      "avgPrice": 0.0,
+      "liquidation": false,
+      "commission": 1.0,
+      "commissionCurrency": "USD",
+      "realizedPnl": -1000000000000000.0
+    }
+  },
+  "orderEventsOutdatedBridgeError": {
+    "event": "error",
+    "version": 3,
+    "error": {
+      "code": "invalid_request",
+      "message": "WebSocket JSON does not match the v3 contract: unknown variant `order_events`, expected one of `account_balance`, `candles`, `stock_quote` at line 1 column 27"
+    }
+  },
+  "streamErrorEvent": {
+    "event": "error",
+    "version": 3,
+    "error": {
+      "code": "gateway_unavailable",
+      "message": "IB Gateway is unavailable"
+    }
+  },
+  "detectionResponse": {
+    "version": 3,
+    "status": "connected",
+    "message": "IB Gateway TWS API is connected",
+    "accounts": ["U1234567"]
+  },
+  "probeResponse": {
+    "version": 3,
+    "provider": "ibkr",
+    "ok": true,
+    "status": "connected",
+    "message": "IB Gateway TWS API is connected",
+    "accountRef": "U1234567"
+  },
+  "candleResponse": {
+    "version": 3,
+    "candles": [
+      {
+        "timestamp": 1784912400000,
+        "open": 650.1,
+        "high": 651.5,
+        "low": 649.75,
+        "close": 651.25,
+        "volume": 125000.0,
+        "confirmed": true
+      }
+    ]
+  },
+  "optionChainResponse": {
+    "version": 3,
+    "underlyingSymbol": "SPY",
+    "underlyingPrice": 650.25,
+    "contracts": [
+      {
+        "conid": 900001,
+        "localSymbol": "SPY 260731C00650000",
+        "right": "call",
+        "strike": 650.0,
+        "expiry": "2026-07-31",
+        "multiplier": 100.0,
+        "bid": 2.1,
+        "ask": 2.15,
+        "bidSize": 12.0,
+        "askSize": 10.0,
+        "volume": 1000.0,
+        "openInterest": 5000.0,
+        "delta": 0.52,
+        "mark": 2.125,
+        "priceIncrementRules": [
+          {
+            "lowerEdge": 0.0,
+            "increment": 0.01
+          }
+        ],
+        "quoteTimestampMs": 0,
+        "delayed": false,
+        "canTrade": true
+      }
+    ]
+  },
+  "optionQuoteResponse": {
+    "version": 3,
+    "underlyingSymbol": "SPY",
+    "contract": {
+      "conid": 900001,
+      "localSymbol": "SPY 260731C00650000",
+      "right": "call",
+      "strike": 650.0,
+      "expiry": "2026-07-31",
+      "multiplier": 100.0,
+      "bid": 2.1,
+      "ask": 2.15,
+      "bidSize": 12.0,
+      "askSize": 10.0,
+      "volume": 1000.0,
+      "openInterest": 5000.0,
+      "delta": 0.52,
+      "mark": 2.125,
+      "priceIncrementRules": [
+        {
+          "lowerEdge": 0.0,
+          "increment": 0.01
+        }
+      ],
+      "quoteTimestampMs": 0,
+      "delayed": false,
+      "canTrade": true
+    }
+  },
+  "accountStateResponse": {
+    "version": 3,
+    "provider": "ibkr",
+    "accountRef": "U1234567",
+    "positions": [
+      {
+        "accountRef": "U1234567",
+        "contractId": 756733,
+        "symbol": "SPY",
+        "localSymbol": "SPY",
+        "instrumentKind": "stock",
+        "size": 1.25,
+        "averagePrice": 650.25,
+        "multiplier": 1.0
+      }
+    ],
+    "orders": [
+      {
+        "accountRef": "U1234567",
+        "orderId": 12345,
+        "contractId": 756733,
+        "symbol": "SPY",
+        "instrumentKind": "stock",
+        "side": "sell",
+        "quantity": 1.25,
+        "price": 675.0,
+        "triggerPrice": null,
+        "status": "Submitted",
+        "orderType": "limit",
+        "timeInForce": "gtc",
+        "outsideRth": false,
+        "algo": null,
+        "ocaGroup": "oca-sunk-0f8b6f1e-4c1d-4a53-9a3e-2d7f5c9b8e21"
+      }
+    ],
+    "serverLink": "connected"
+  },
+  "orderResponse": {
+    "version": 3,
+    "provider": "ibkr",
+    "ok": true,
+    "status": "accepted",
+    "message": "IBKR order accepted (12345)",
+    "accountRef": "U1234567",
+    "orderId": "12345",
+    "customerOrderId": "sunk-0f8b6f1e-4c1d-4a53-9a3e-2d7f5c9b8e21"
+  },
+  "bracketOrderResponse": {
+    "version": 3,
+    "provider": "ibkr",
+    "ok": true,
+    "status": "filled",
+    "message": "IBKR order filled (100)",
+    "accountRef": "U1234567",
+    "orderId": "100",
+    "customerOrderId": "sunk-0f8b6f1e-4c1d-4a53-9a3e-2d7f5c9b8e21",
+    "protection": {
+      "status": "rejected",
+      "message": "IBKR accepted the order but rejected the stop loss at 620 (Order rejected). The position may be unprotected; check IBKR open orders",
+      "legs": [
+        {
+          "kind": "take_profit",
+          "customerOrderId": "sunk-1b2c3d4e-5f60-4a71-8b92-a3b4c5d6e7f8",
+          "orderId": "101",
+          "price": 700.0,
+          "status": "attached"
+        },
+        {
+          "kind": "stop_loss",
+          "customerOrderId": "sunk-2c3d4e5f-6071-4b82-9ca3-b4c5d6e7f809",
+          "orderId": "102",
+          "price": 620.0,
+          "status": "rejected"
+        }
+      ]
+    }
+  },
+  "linkedExitOrderResponse": {
+    "version": 3,
+    "provider": "ibkr",
+    "ok": true,
+    "status": "resting",
+    "message": "IBKR order is working (105). Linked with 1 exit order in IBKR OCA group oca-sunk-0f8b6f1e-4c1d-4a53-9a3e-2d7f5c9b8e21",
+    "accountRef": "U1234567",
+    "orderId": "105",
+    "customerOrderId": "sunk-3e4f5a6b-7c8d-4e9f-8a0b-1c2d3e4f5a6b",
+    "exit": {
+      "ocaGroup": "oca-sunk-0f8b6f1e-4c1d-4a53-9a3e-2d7f5c9b8e21",
+      "quantity": 10.0,
+      "positionQuantity": 10.0,
+      "linkedOrderIds": [
+        "104"
+      ],
+      "relinked": [
+        {
+          "fromOrderId": "88",
+          "toOrderId": "104"
+        }
+      ],
+      "warnings": []
+    }
+  },
+  "reconcileOrderResponse": {
+    "version": 3,
+    "provider": "ibkr",
+    "accountRef": "U1234567",
+    "customerOrderId": "sunk-0f8b6f1e-4c1d-4a53-9a3e-2d7f5c9b8e21",
+    "state": "completed",
+    "status": "filled",
+    "orderId": "12345",
+    "message": "IBKR completed orders contain this order reference (12345)"
+  },
+  "cancelOrderResponse": {
+    "version": 3,
+    "provider": "ibkr",
+    "ok": true,
+    "status": "cancelled",
+    "message": "IBKR confirmed the order cancellation",
+    "accountRef": "U1234567",
+    "orderId": "12345",
+    "customerOrderId": null
+  },
+  "errorResponse": {
+    "version": 3,
+    "error": {
+      "code": "gateway_unavailable",
+      "message": "IB Gateway is unavailable"
+    }
+  },
+  "linkedExitOutdatedBridgeError": {
+    "version": 3,
+    "error": {
+      "code": "invalid_request",
+      "message": "IBKR does not support reduce-only or post-only orders"
+    }
+  },
+  "orderTypeOutdatedBridgeError": {
+    "version": 3,
+    "error": {
+      "code": "invalid_request",
+      "message": "orderType must be market, limit, or stop_market"
+    }
+  },
+  "orderFieldOutdatedBridgeError": {
+    "version": 3,
+    "error": {
+      "code": "invalid_request",
+      "message": "request JSON does not match the v3 contract: unknown field `outsideRth`, expected one of `version`, `connectionId`, `provider`, `instrument`, `instrumentKind`, `side`, `sizeUsd`, `quantity`, `orderType`, `limitPrice`, `stopPrice`, `timeInForce`, `marketSlippageBps`, `reduceOnly`, `postOnly`, `accountRef`, `customerOrderId`, `protection` at line 1 column 402"
+    }
+  },
+  "timeInForceOutdatedBridgeError": {
+    "version": 3,
+    "error": {
+      "code": "invalid_request",
+      "message": "unsupported IBKR timeInForce"
+    }
+  }
+}
