@@ -218,9 +218,18 @@ order or the operator clears it (`release: true`). See
 [`docs/ibkr-gateway-contract.md`](docs/ibkr-gateway-contract.md) for the
 full operational contract.
 
+## Licensing
+
+Current source is licensed under GPL-3.0-only. The immutable
+[`source-v0.6.0`](https://github.com/sunk-cost-capital/sunk-ibkr-bridge/tree/source-v0.6.0)
+snapshot and its release source archive remain available under their original
+MIT license. Existing release binaries and checksums are unchanged.
+`SOURCE.json` identifies the upstream source of this tree; the subsequent license
+change is recorded in this repository history.
+
 ## Source and releases
 
-This bridge is [MIT licensed](LICENSE). You can inspect, modify, and build it
+This bridge is [GPL-3.0-only licensed](LICENSE). You can inspect, modify, and build it
 without installing the Sunk desktop app or accessing the private Sunk repository.
 IB Gateway itself is supplied separately by Interactive Brokers.
 

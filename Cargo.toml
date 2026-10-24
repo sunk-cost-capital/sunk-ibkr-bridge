@@ -4,7 +4,7 @@ version = "0.6.0"
 description = "Loopback-only browser bridge for the Interactive Brokers TWS API"
 authors = ["Sunk Cost Capital"]
 edition = "2024"
-license = "MIT"
+license = "GPL-3.0-only"
 repository = "https://github.com/sunk-cost-capital/sunk-ibkr-bridge"
 default-run = "sunk-ibkr-bridge"
 
